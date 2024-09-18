@@ -1,12 +1,12 @@
 {
-  "name": "server",
+  "name": "rogue-like-game",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel public/index.html -p 3000",
-    "dev": "nodemon ./server.js"
+    "dev": "nodemon ./server.js",
+    "build": "parcel build public/index.html"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "parcel": "^2.12.0",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "parcel-reporter-static-files-copy": "^1.5.3",
     "process": "^0.11.10"
   }
 }

@@ -12,16 +12,15 @@ const config = {
   physics: {
     default: 'arcade',
     arcade: {
-      gravity: { y: 0 },
-      debug: true,
+      gravity: { y: 300 },
+      debug: false,
     },
   },
   autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
 };
 
-const game = new Phaser.Game(config);
+var game = new Phaser.Game(config);
 
-game.scene.add('titlescreen', TitleScreen);
 game.scene.add('game', Game);
 
 game.scene.start('game');
